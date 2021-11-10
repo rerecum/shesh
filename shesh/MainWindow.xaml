@@ -11,6 +11,11 @@
             <MenuItem Header="_File">
                 <MenuItem Header="_Exit" />
             </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Paste" />
+            </MenuItem>
             <MenuItem Header="_Tools">
                 <MenuItem Header="_Manage users">
                     <MenuItem.Icon>
@@ -20,6 +25,6 @@
                 <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
             </MenuItem>
         </Menu>
-        <TextBox AcceptsReturn="True" />
+        <TextBox AcceptsReturn="True" Name="txtEditor" />
     </DockPanel>
 </Window>

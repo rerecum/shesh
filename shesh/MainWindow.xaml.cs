@@ -24,5 +24,15 @@ namespace shesh
         {
             InitializeComponent();
         }
+
+        private void NewCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        private void NewCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            txtEditor.Text = "";
+        }
     }
 }
